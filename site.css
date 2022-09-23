@@ -16,9 +16,9 @@ h1, h2 {
 #headshot {
     border: 1px solid #808080;
     padding: 2px;
-    width: 300px;
-    height: 300px;
-    border-radius: 500px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
 
 }
 
@@ -44,3 +44,39 @@ footer {
     width: 100%;
 
 }
+
+#menu li {
+    display: inline;
+    padding: 8px;
+    background-color: darkgray;
+    color: white;
+}
+
+#menu li a {
+    color: white; !important;
+    text-decoration: none;
+}
+
+#menu li.active {
+    background-color: darkblue;
+}
+
+#menu {
+    float: right;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+header #menu {
+    margin-left: auto;
+}
+
+/* header #headshot, header #siteName, header #menu {
+    display: inline;
+    vertical-align: middle;
+}*/
